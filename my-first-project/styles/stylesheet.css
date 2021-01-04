@@ -1,4 +1,41 @@
+nav {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-top: double;
+  border-bottom: double;
+  border-color: #317F90;
+  border-width: 5px;
+}
+nav a {
+  padding-right: 10px;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Georgia", serif;
   font-style: italic;
+}
+h1 {
+  padding-right: 30px;
+}
+body {
+  width: 75%;
+  padding: 20px;
+}
+li {
+  padding: 5px;
+}
+footer {
+  float: left;
+}
+.about-me-body {
+  float: left;
+}
+.interests-article {
+  border-bottom: double;
+  border-color: #317F90;
+  border-width: 5px;
+}
+.projects-article {
+  border-bottom: double;
+  border-color: #317F90;
+  border-width: 5px;
 }
