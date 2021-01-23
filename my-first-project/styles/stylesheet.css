@@ -3,31 +3,36 @@ nav {
   padding-top: 10px;
   border-top: double;
   border-bottom: double;
-  border-color: #317F90;
   border-width: 5px;
+}
+.home-nav{
+    border-color: #317F90;
+}
+.projects-nav{
+    border-color: #539031;
 }
 nav a {
   padding-right: 10px;
+}
+body {
+  width: 75%;
+  padding: 20px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Georgia", serif;
   font-style: italic;
 }
 h1 {
-  padding-right: 30px;
+  font-size: 32px;
 }
-body {
-  width: 75%;
-  padding: 20px;
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 20px;
 }
 li {
-  padding: 5px;
-}
-footer {
-  float: left;
-}
-.about-me-body {
-  float: left;
+  padding: 3px;
 }
 .interests-article {
   border-bottom: double;
@@ -36,6 +41,17 @@ footer {
 }
 .projects-article {
   border-bottom: double;
-  border-color: #317F90;
+  border-color: #539031;
   border-width: 5px;
+}
+img {
+  border: solid #000;
+}
+.philippines-img {
+  float:left;
+  margin-right: 10px;
+}
+.summer-img {
+  float:right;
+  margin-left: 10px;
 }
