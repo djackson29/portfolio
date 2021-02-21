@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Varta:wght@500&display=swap');
 nav {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   border-top: double;
   border-bottom: double;
-  border-width: 5px;
+  border-width: .5rem;
 }
 .home-nav{
     border-color: #317F90;
@@ -12,46 +13,52 @@ nav {
     border-color: #539031;
 }
 nav a {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 body {
   width: 75%;
-  padding: 20px;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-family: Varta, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Georgia", serif;
+  font-family: Merriweather, serif;
   font-style: italic;
 }
 h1 {
-  font-size: 32px;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 26px;
+  font-size: 2rem;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 li {
-  padding: 3px;
-}
-.interests-article {
-  border-bottom: double;
-  border-color: #317F90;
-  border-width: 5px;
-}
-.projects-article {
-  border-bottom: double;
-  border-color: #539031;
-  border-width: 5px;
+  padding: .5rem;
 }
 img {
   border: solid #000;
 }
 .philippines-img {
-  float:left;
-  margin-right: 10px;
+  float: left;
+  margin-right: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 .summer-img {
   float:right;
-  margin-left: 10px;
+  margin-left: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+.home-footer {
+  border-top: double;
+  border-color: #317F90;
+  border-width: .5rem;
+}
+.projects-footer {
+  border-top: double;
+  border-color: #539031;
+  border-width: .5rem;
 }
