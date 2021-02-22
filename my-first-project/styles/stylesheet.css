@@ -67,3 +67,18 @@ img {
   flex-direction: row;
   justify-content: space-around;
 }
+article ol li:nth-child(even) {
+  background-color: #e5e5e5;
+}
+.project-article:hover {
+  border: 3px solid #317F90;
+}
+.project-article {
+  transition: border 3s ease-in;
+}
+.interests-article:hover {
+  border: 2px solid #539031;
+}
+.interests-article {
+  transition: border .1s;
+}
