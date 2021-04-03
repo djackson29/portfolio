@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DJ's Front-End Dev Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://kit.fontawesome.com/0b1e1b887a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Let's Talk</h1>
+      <nav class="contact-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+    <section>
+      <h2>Contact DJ</h2>
+      <form method="GET">
+
+        <label>Your name:
+          <input type="text" name="applicantName">
+        </label>
+
+        <label>Your email:
+          <input type="email" name="applicantEmail">
+        </label>
+        <br>
+
+        <fieldset class="checkbox">
+          <legend>Reason(s) for contacting DJ</legend>
+          <label>Interested in hiring
+            <input type="checkbox" name="reason" value="hiring">
+            <span class="checkmark"></span>
+          </label>
+
+          <label>Need help with a project
+            <input type="checkbox" name="reason" value="need-help">
+            <span class="checkmark"></span>
+          </label>
+
+          <label>Would like to chat and discuss a potential partnership on a future project
+            <input type="checkbox" name="reason" value="future-project">
+            <span class="checkmark"></span>
+          </label>
+        </fieldset><br>
+
+        <fieldset>
+          <legend>Are you interested in collaborating on a project with me?</legend>
+          <label>Yes
+            <input type="radio" name="collaborate" value="yes">
+          </label>
+          <label>No
+            <input type="radio" name="collaborate" value="no">
+          </label>
+        </fieldset>
+        <br>
+
+        <label>If so, how many hours per week can you commit to our project?<br>
+          <select name="hours">
+            <option value="">Please select</option>
+            <option value="few">Less than 10</option>
+            <option value="some">10 - 20</option>
+            <option value="many">20+</option>
+          </select>
+        </label>
+        <br>
+
+        <label>Please enter your message for DJ below<br>
+          <textarea name="message" rows="4" cols="50"></textarea>
+        </label><br>
+
+        <input type="submit" value="Submit Message">
+
+      </form>
+    </section>
+    <footer class="contact-footer">
+      <p>&#169; 2021 DJ</p>
+    </footer>
+  </body>
+</html>

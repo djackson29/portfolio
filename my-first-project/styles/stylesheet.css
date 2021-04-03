@@ -12,11 +12,16 @@ nav {
 .projects-nav{
     border-color: #539031;
 }
+
+.contact-nav{
+    border-color: #CE593B;
+}
+
 nav a {
   padding-right: 1rem;
 }
 body {
-  width: 75%;
+  width: 95%;
   padding: 2rem;
   font-size: 1.2rem;
   font-family: Varta, sans-serif;
@@ -62,6 +67,13 @@ img {
   border-color: #539031;
   border-width: .5rem;
 }
+
+.contact-footer {
+  border-top: double;
+  border-color: #CE593B;
+  border-width: .5rem;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -70,15 +82,95 @@ img {
 article ol li:nth-child(even) {
   background-color: #e5e5e5;
 }
-.project-article:hover {
-  border: 3px solid #317F90;
+
+
+
+
+
+/* form styles */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: inline;
+  margin: 1rem;
 }
-.project-article {
-  transition: border 3s ease-in;
+
+input[type=submit] {
+  width: 25%;
 }
-.interests-article:hover {
-  border: 2px solid #539031;
+
+input {
+  border-radius: 1rem;
 }
-.interests-article {
-  transition: border .1s;
+
+fieldset input {
+  display: inline;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Customize the labels */
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* on hover, add an orange background color */
+.checkbox label:hover input ~ .checkmark {
+  background-color: #CE593B;
+}
+
+/* when the checkbox is checked, add an orange background */
+.checkbox input:checked ~ .checkmark {
+  background-color: #CE593B;
+}
+
+/* create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* show the checkmark when checked */
+.checkmark:after {
+  display: block;
+}
+
+/* style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #eee;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
